@@ -7,6 +7,7 @@
         <title>Document</title>
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="favicon.ico">
+        <script src="script.js"></script>
     </head>
     <body>
         <div class="wrapper">
@@ -19,14 +20,32 @@
                     <li><a href="">Anonymity & Privacy</a></li>
                 </ul>
             </header>
-            <div class="forms">
-                <div class="form">
-                    <form action="">
-                        <label for="number">Invested money</label><br>
-                        <input type="number" id="number" name="Invested money"><br>
-                        <label for="interest">Interest rate</label><br>
-                        <input type="number" id="interest" name="interest">
-                    </form>
+            <div class="main">
+                <div class="forms">
+                    <div class="form">
+                        <form>
+                            <label for="ammount">Invested money</label><br>
+                            <input type="number" id="ammount" name="Invested money" placeholder="1 000 $" min="100" max="1000000000" step="100"><br>
+                            <label for="interest">Interest rate</label><br>
+                            <input type="number" id="interest" name="interest" placeholder="3.5 %" min="0" max="50" step="0.1"><br><br>
+                            <input type="button" value="Get yield" id="btn1"><br>
+                            <h4>Your yield in one year:</h4>
+                            <p id="otp1"></p><br>
+                        </form>
+                        <form>
+                            <label for="debt">How much do you owe?</label><br>
+                            <input type="number" id="debt" name="debt" placeholder="1 000 $" min="100" max="1000000000" step="100"><br>
+                            <label for="month-to-repay">When do you plan to repay (in months)</label><br>
+                            <input type="number" id="month-to-repay" name="month-to-repay" placeholder="12" min="1" step="1"><br>
+                            <label for="debt-interest">What is the interest rate on your debt</label><br>
+                            <input type="number" id="debt-interest" name="debt-interest" placeholder="3.5 %" min="0" step="0.1"><br><br>
+                            <input type="button" value="Get analysis" id="btn2">
+                            <h4>What will be your monthly repayment:</h4>
+                            <p id="otp2"></p>
+                            <h4>How much do you pay back?</h4>
+                            <p id="otp3"></p>
+                        </form>
+                    </div>
                 </div>
             </div>
             <footer>

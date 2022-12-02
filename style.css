@@ -136,6 +136,13 @@ footer {
     border-radius: 8px;
 }
 
+.form {
+    display: flex;
+    margin: 10px;
+    gap: 20px;
+    width: 100%;
+}
+
 @media screen and (max-width: 1000px) {
     .wrapper {
         height: 100%;
@@ -209,6 +216,13 @@ footer {
         height: auto;
     }
 
+    .form {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        gap: 20px;
+        width: 100%;
+    }
 
 }
 
